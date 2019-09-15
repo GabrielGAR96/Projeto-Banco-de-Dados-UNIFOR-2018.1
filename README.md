@@ -1,13 +1,11 @@
 **ENGLISH VERSION BELOW!**
-
+***
 **Fundação Edson Queiroz** <br>
 **Universidade de Fortaleza** <br>
 **Centro de Ciências Tecnológicas** <br>
 **Disciplina: Fundamentos de Bancos de Dados** <br>
 <br>
 Esta é uma aplicação desenvolvida como projeto para a disciplina de Fundamentos de Bancos de Dados. Abaixo encontram-se os requisitos dados pelo professor Luciano Leal Do Vale.
-
-***
 
 ### DESENVOLVIMENTO DE UMA APLICAÇÃO EM BANCOS DE DADOS
 
@@ -87,14 +85,14 @@ Um grupo de investidores decidiu comprar parte das ações de uma pequena e inov
   - Clareza de Código
 
 
+***
+
 **Edson Queiroz Foundation** <br>
 **University of Fortaleza** <br>
 **College of Technological Sciences** <br>
 **Course: Database Fundamentals** <br>
 <br>
 This is an application developed as a project for the Database Fundamentals course. Below you can find the requirements written by professor Luciano Leal do Vale.
-
-***
 
 ### DEVELOPMENT OF A DATABASE APPLICATION
 
