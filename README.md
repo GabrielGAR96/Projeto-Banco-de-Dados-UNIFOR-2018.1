@@ -1,3 +1,5 @@
+**ENGLISH VERSION BELOW!**
+
 **Fundação Edson Queiroz** <br>
 **Universidade de Fortaleza** <br>
 **Centro de Ciências Tecnológicas** <br>
@@ -83,3 +85,89 @@ Um grupo de investidores decidiu comprar parte das ações de uma pequena e inov
   - Tratamento de Eventos
   - Tratamento de Exceção
   - Clareza de Código
+
+
+**Edson Queiroz Foundation** <br>
+**University of Fortaleza** <br>
+**College of Technological Sciences** <br>
+**Course: Database Fundamentals** <br>
+<br>
+This is an application developed as a project for the Database Fundamentals course. Below you can find the requirements written by professor Luciano Leal do Vale.
+
+***
+
+### DEVELOPMENT OF A DATABASE APPLICATION
+
+#### 1. INTRO
+In this assignment, you must demonstrate every step necessary in order to develop a client/server application by using a relational database in a two-tier web architecture.
+
+#### 2. THE PROBLEM
+
+A group of investors decided to buy stock in a small and innovative company, NEW Technology Computing Inc. Now, with the financial input of their new partners, NEW wants to develop a revolutionary virtual e-learning environment. The first part of this ambitious project consists in a virtual exam evaluating system. In this environment, the associated students, via quarterly payments, may obtain exams about different subjects. The exams can be graded both online or by an instructor from the website, of whom must be a well renowned professional in the exam’s area of study. The group needs to control and manage all the tasks referring to the operation of the website, of which includes publicity, student subscription, instructors payrolls, and monitoring and evaluating each student’s results. Additionally, it is extremely important for the executives of NEW to consult the information involved in these processes in order to evaluate the behavior of the organization as well as defining the strategies and global policies of the company.
+
++ ##### The project of this application must have the following basic functionalities:
+  - Registrations: students, instructors, courses, subjects, questions and answers (alunos, facilitadores, matérias, assuntos, perguntas and opções de resposta);
+  - Registries of associated students subscriptions and control over students payments;
+  - Registries of the instructors payroll;
+  - Continuous evaluation of each participant (control of grades obtained on each exam);
+  - Allowing the search of participants by using the following “filters”: ID, name, subjects of each exam taken, GPA;
+  - Allowing the search of instructors by using the following “filters”: ID, name, courses he is allowed to teach, number of graded exams.
+  
++ ##### NB:
+  1. Registering a certain item includes the operations of INSERT, DELETE and UPDATE.
+  2. The queries must be generated dynamically by one of the “filters” chosen by the user.
+  3. Once registered, the student can utilize the website’s services for three months. After that, the student must renew his or her registration for another three months. On the registration process, the student must indicate the courses he is interested in. The subscription value, of which should be pay by the student, will be calculated by the amount of courses and each course’s cost. Each course may have a different value. The registration fee equals the sum of values of each course chosen by the student.
+  4. Each instructor is allowed to act in a certain group of courses.
+  5. Each course has various subjects. For each subject there is a set of questions associated to it. A question may have a multiple-choice or an open-ended answer. Each multiple-choice question must have one set of options of which only one is the correct answer.
+  6. When a student asks to take an exam, the system must randomly choose a set of questions related to the course (or course and subject) selected by the student, of which must be visualized by the student or be available to download (it is up to the associated student). Also, the student may indicate as well if he wants multiple-choice questions only, open-ended questions only or if he wants both. If the exam only has multiple-choice answers, it will be graded online. Otherwise, the student’s answers must be delivered to an instructor who will grade the exam.
+  7. It is also necessary to keep every grade a student got in his exams.
+  8. The website must also have a ranking of the students who had the best results in the exams they took
+  9. On each subscription or renovation, the student receives a bonus of 10% his subscription fee. The bonus, which can be accumulated, may be used in the purchase of products for sale on the website such as books, CDs, T-shirts, etc.
+  10. A registered student may send messages asking questions about the material, which will be automatically allocated to a qualified instructor. The instructor must answer the question via email.
+  11. Paying an instructor must be made based on exams and student questions allocated to him/her. The amount to be paid for each exam and each question must be in a parameter table.
+
+#### 3. ORIENTATIONS
+- The software proposed in this assignment must be developed in one of the following languages: C/C++ (for computer engineering students) or Java (for computer science students);
+- You must use SQL standard commands. The use of frameworks that generate the commands such as Hibernate will not be allowed;
+- Any questions about the software’s requirements must be asked directly to the professor;
+- The source code of the software must be sent via Unifor Online before the deadline;
+- In order to grade the assignment and verify if it meets the requirements, a demo time will be scheduled. The student may be quizzed in order to demonstrate that he truly mastered the concepts of OOP, as of the code developed;
+- It will be considered during the evaluation the proper execution of the software (requirements meeting) and the conformity of the source code to the material previously seen on this course;
+- Any copy attempts from another student or from the internet, as for any other forms of fraud, including copying parts of the software will result in an F.
+
+#### 4. ACTIVITIES
+  4.1. Make an entity-relationship diagram for the presented problem.
+
+4.2. Map your schema by following the relational model.
+  - Indicate the primary keys, foreign keys and other keys that you may have inserted.
+  - Point out whether the attribute is or isn’t “NOT NULL” PS This step allows you to use a tool e.g. ErWin.
+
+  4.3. Implement your relational schema in a relational DBMS.
+
+  4.4. Create the following visions:
+   - Create a vision that shows to each student: their names and amount of money paid by them.
+   - Create a vision that shows to each course and subject its description and the amount of questions available.
+   - Create a vision that shows to each instructor their name and number of courses they are able to teach.
+
+  4.5. Create a trigger for the following task:
+   - By inserting, updating or removing a subscription the student’s bonus must be updated.
+   - By registering a new exam, an instructor able to teach the course the exam belongs to, must be chosen automatically. Besides, the company wishes that the instructors have similar work hours.
+   - By registering a student’s question, it must be allocated to a qualified instructor.
+
+  4.6. Create stored procedures for the following tasks:
+    - Create a stored procedure that will calculate the amount to be paid for an instructor’s services during a certain period. Consider as IN parameters: the instructor’s ID, and starting and finishing dates of  his work which should be taken into account in the calculation. The procedure must also insert a tuple for this pagamentoAluno (paymentStudent) in the pagamentoAlunos (paymentStudents) table.
+    - Create a stored procedure that receives as an IN parameter an integer “n” and calculates the top “n” best students, considering all the exams taken. The procedure must keep this information inside a table in order to be used on the website. In other words, the website will show the top “n” best students generated by the last “ranking”. NB: You can create visions, triggers and stored procedures in order to facilitate the implementation of your project.
+
+#### 5. EVALUATION CRITERIA
+##### This assignment will be evaluated according to the following requirements:
+  - Functionality
+  - Documentation 
+  - Standardization
+  - Modularity 
+  - Flexibility
+  - Database design
+  - Graphic user interface
+  - Event handling
+  - Exception handling
+  - Code clarity
+  
